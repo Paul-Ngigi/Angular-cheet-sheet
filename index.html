@@ -11,10 +11,83 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
         crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <div class="container">
+        <div class="row mt-3 bg-dark text-white">
+            <div class="col-md-12">
+                <h1 class="text-danger">Welcome to my Angular Cheet Sheet</h1>
+                <p>The sheet will have all necessary commands to help you move foward while developing your Angular
+                    applications</p>
+                <h4 class="mt-4 p-4 text-warning">Let's get started</h4>
 
+                <ol>
+                    <li>
+                        <!-- Setting up the app -->
+                        <h5>Setting up a new app</h5>
+                        <pre>ng new app-name</pre>
+                    </li>
+                    <li>
+                        <!-- Starting the server -->
+                        <h5>Starting up a local server</h5>
+                        <pre>ng serve</pre>
+                    </li>
+                    <li>
+                        <!-- Creating a class -->
+                        <h5>Generating a new class</h5>
+                        <pre>ng generate class class-name</pre>
+                    </li>
+
+                    <li>
+                        <!-- Creating new components -->
+                        <h5>Generating a new component</h5>
+                        <pre>ng generate component component-name</pre>
+                    </li>
+                    <li>
+                        <!-- Creating directives -->
+                        <h5>Generating custom directives</h5>
+                        <pre>ng generate directive directive-name</pre>
+                    </li>
+                    <li>
+                        <!-- Creating pipes -->
+                        <h5>Generating custom pipes</h5>
+                        <pre>ng generate pipe pipe-name</pre>
+                    </li>
+                    <li>
+                        <!-- Adding bootstap -->
+                        <h5>Adding bootstrap</h5>
+                        <pre>npm install --save bootstrap popper</pre>
+                        <p>Then add this code to your src/app/styles.css</p>
+                        <pre>@import "~bootstrap/dist/css/bootstrap.css";</pre>
+                    </li>
+                    <li>
+                        <!-- Deployment -->
+                        <h5>Deploying angular apps</h5>
+                        <ol type="a">
+                            <li>
+                                <p>Create Github repo</p>
+                            </li>
+                            <li>
+                                <p>Install angular-cli-ghpages</p>
+                                <pre>npm i angular-cli-ghpages --save-dev</pre>
+                            </li>
+                            <li>
+                                <p>Run Build</p>
+                                <pre>ng build --prod --base-href "https://GithubUserName.github.io/GithubRepoName/" </pre>
+                            </li>
+                            <li>
+                                <p>Deploy to gh-pages</p>
+                                <pre>npx angular-cli-ghpages --dir=dist/Project-name</pre>
+                            </li>
+                        </ol>
+                    </li>
+
+                </ol>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
